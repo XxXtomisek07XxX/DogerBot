@@ -24,3 +24,10 @@ async def on_ready():
      print('The bot is ready!')
      print(bot.user.name)
      print(bot.user.id)
+     
+@bot.command
+async def bacha():
+     await bot.say('dávejte si bacha kam dáváte token!')
+
+
+bot.run(os.getenv("BOT_TOKEN"))
